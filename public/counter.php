@@ -1,6 +1,10 @@
 <?php
 // File to store daily unique IPs and count
-$file = 'counter_data.json';
+$db_dir = __DIR__ . '/../db';
+if (!is_dir($db_dir)) {
+    mkdir($db_dir, 0755, true);
+}
+$file = $db_dir . '/counter_data.json';
 $today = date('Y-m-d');
 $ip = $_SERVER['REMOTE_ADDR'];
 
