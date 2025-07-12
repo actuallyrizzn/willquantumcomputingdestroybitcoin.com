@@ -7,45 +7,67 @@
   <meta name="description" content="A curated list of resources for learning more about Bitcoin and quantum computing." />
   <meta name="keywords" content="Bitcoin, quantum computing, resources, education" />
   <link rel="icon" type="image/svg+xml" href="bitcoin.svg" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" integrity="sha384-9ndCyUa8v8Y/seeFm+p7nDz0pCr5c5xvlFZyp22KJF+ldfI+IOIrnK53Wj0EVjj" crossorigin="anonymous">
   <style>
     body {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      min-height: 100vh;
       background: #f7f7f7;
       font-family: Arial, sans-serif;
-      padding-top: 40px;
     }
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 24px;
-      text-align: center;
-    }
-    ul {
-      list-style-type: none;
-      padding: 0;
-      max-width: 600px;
-    }
-    li {
-      margin-bottom: 16px;
-      font-size: 1.2rem;
+    .bitcoin-logo {
+      width: 100px;
+      height: 100px;
     }
     a {
       color: #f7931a;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <h1>Resources</h1>
-  <p>This page will soon contain links to resources for those wanting to learn more about Bitcoin and quantum computing.</p>
-  <ul>
-    <li><em>Coming soon...</em></li>
-  </ul>
+  <div class="container py-5 text-center">
+    <img src="bitcoin.svg" alt="Bitcoin logo" class="bitcoin-logo mb-3">
+    <h1 class="display-5">Resources</h1>
+    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi luctus neque in risus fermentum dignissim.</p>
+  </div>
+
+  <div class="container pb-5">
+    <div class="row g-4 mb-4">
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Lorem Link One</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras euismod.</p>
+            <a href="#" class="btn btn-outline-primary">Visit</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Lorem Link Two</h5>
+            <p class="card-text">Quisque dictum, arcu a aliquet luctus, ipsum nunc ullamcorper velit.</p>
+            <a href="#" class="btn btn-outline-primary">Visit</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Lorem Link Three</h5>
+            <p class="card-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
+            <a href="#" class="btn btn-outline-primary">Visit</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <ul class="list-group">
+      <li class="list-group-item"><a href="#">Lorem ipsum dolor sit amet</a></li>
+      <li class="list-group-item"><a href="#">Consectetur adipiscing elit</a></li>
+      <li class="list-group-item"><a href="#">Sed do eiusmod tempor</a></li>
+      <li class="list-group-item"><a href="#">Ut labore et dolore magna aliqua</a></li>
+    </ul>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76A2z02JZxdjIhU9At4E6sK7QgpO3HchpHG8EbP1cnj/Wev8cAL7AIeYBbsK3AX" crossorigin="anonymous"></script>
 </body>
 </html>
