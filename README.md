@@ -2,7 +2,7 @@
 
 ![Bitcoin Logo](public/bitcoin.svg)
 
-A minimalist, tongue-in-cheek site answering the question: **Will quantum computing destroy bitcoin?**
+A minimalist, tongue-in-cheek site answering the question: **Will quantum computing destroy Bitcoin?**
 
 ## Features
 - Bitcoin logo and bold answer
