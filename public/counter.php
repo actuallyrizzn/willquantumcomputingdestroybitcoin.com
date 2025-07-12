@@ -26,8 +26,13 @@ foreach ($data as $stored_ip => $last_date) {
 // Add/update today's visit for this IP
 $data[$ip] = $today;
 
-// Save updated data
-file_put_contents($file, json_encode($data));
+// Save updated data with an exclusive lock
+$result = file_put_contents($file, json_encode($data), LOCK_EX);
+if ($result === false) {
+    http_response_code(500);
+    echo json_encode(['error' => 'Failed to update counter']);
+    exit;
+}
 
 // Return DAU count
 header('Content-Type: application/json');
