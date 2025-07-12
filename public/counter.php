@@ -1,5 +1,5 @@
 <?php
-// File to store daily unique IPs and count
+// Stores daily unique IPs (used to calculate the visitor count)
 $db_dir = __DIR__ . '/../db';
 if (!is_dir($db_dir)) {
     mkdir($db_dir, 0755, true);
