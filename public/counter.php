@@ -34,13 +34,6 @@ foreach ($data as $stored_ip => $last_date) {
 // Add/update today's visit for this IP
 $data[$ip] = $today;
 
-// Save updated data
-ftruncate($fp, 0);
-rewind($fp);
-fwrite($fp, json_encode($data));
-fflush($fp);
-flock($fp, LOCK_UN);
-fclose($fp);
 
 // Return DAU count
 header('Content-Type: application/json');
